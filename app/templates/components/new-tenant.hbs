@@ -1,0 +1,25 @@
+{{#if addNewTenant}}
+  <h1>New Tenant</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          {{input value=name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age</label>
+          {{input value=age id="age"}}
+        </div>
+
+        <div class="form-group">
+          <label for="bio">Bio</label>
+          {{input value=bio id="bio"}}
+        </div>
+
+        <button {{action 'save1'}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'tenantFormShow'}}>New Tenant</button>
+{{/if}}

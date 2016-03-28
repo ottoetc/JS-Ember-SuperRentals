@@ -1,0 +1,14 @@
+<h1>Tenant Signup</h1>
+
+<ul>
+  {{#each model as |tenant|}}
+    {{tenant-tile tenant=tenant destroyTenant="destroyTenant"}}
+  {{/each}}
+</ul>
+
+{{new-tenant save2="save3"}}
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Contact{{/link-to}}
+{{#link-to 'index'}}Home{{/link-to}}
+{{#link-to 'announcements'}}Announcements{{/link-to}}
